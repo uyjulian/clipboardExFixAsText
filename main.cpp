@@ -9,9 +9,9 @@
 
 #include "ncbind/ncbind.hpp"
 
-/* EmptyClipboard calls are added to empty the clipboard */
+/* EmptyClipboard calls are added to empty the clipboard. */
 /* This avoids the issue where if there is an image on clipboard, */
-/* text won't get pasted if the application prefers images */
+/* text won't get pasted if the application prefers images. */
 static void TVPClipboardSetTextFix(const ttstr & text)
 {
 	if( ::OpenClipboard(0) ) {
